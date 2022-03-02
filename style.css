@@ -126,7 +126,9 @@ html, body {
   border-radius: 29.5px;
   border: 1px solid #00B6F0;
 }
-
+.nav-bar{
+    display: none;
+}
 .getstarted:hover {
     color: #000000;
     background: transparent;
@@ -935,12 +937,7 @@ cursor: pointer;
     width:  39.33px;
     height: 39.33px;
 }
-@media screen and (max-width: 1440px) {
-    .svg {
-        display: none;
-    }
 
-}
 
 @media screen and (max-width: 1024px) {
         ul {
@@ -1175,8 +1172,8 @@ cursor: pointer;
 
 @media screen and (max-width: 625px) {
 
-.svg {
-    display: none;
+.nav-bar {
+    display: block;
 }
 
 .lightning h1 {
@@ -1387,6 +1384,7 @@ padding: 20px 5px;
         margin: auto;
         margin-top: 20px;
         width: 100%;
+        margin: 10px auto 0px;
     
     }
 
@@ -1426,6 +1424,10 @@ padding: 20px 5px;
 
     .bigibm {
         display: none;
+    }
+
+    .codescreen {
+        right: -2%;
     }
 }
     
