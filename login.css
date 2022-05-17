@@ -15,14 +15,15 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
+    height: 100vh; 
     margin: auto;
 }
 
 .innercontainer {
-    width: 85%;
+    width: 90%;
     margin: auto;
-    padding: 0 auto;
+    padding: 50px; 
     display: flex;
     flex-direction: row;
     Stroke: Linear 
@@ -32,11 +33,7 @@ body {
 
 .cardone {
     width: 65%;
-    height: auto;
-    padding: auto;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-left: 40px;
+    margin: auto;
     background-color:rgba(0, 80, 124, 0.2);
     border: 35px solid transparent;
     border-top-left-radius: 23px;
@@ -57,6 +54,7 @@ section h1 {
 .signin {
 width: 60%;
 display: flex;
+margin: auto;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -68,46 +66,29 @@ align-items: center;
   font-weight: 400;
   font-size: 14px;
 }
-
-.input-icons i {
-    position: absolute;
-    
-}
   
 .input-icons {
     width: 100%;
-    margin: 10px;
+    margin: auto;
 }
    
-.icon {
-  padding: 20.7px;
-  color: #00507C;
-  min-width: 50px;
-  margin-left: 130px;
-  background: white;
-  border: transparent;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  width: 57px;
-  
-  
-}
     
 .input-field {
     color: #00507C;
-    width: 100%;
-    padding: 21px;
-    margin-left: 165px; 
+    width: 108%;
+    padding: 16px;
+    margin: 7px;
     text-align: left;
     border: transparent;
     border-radius: 25px;
 }
 
 .terms {
-    width: 120%;
-    margin-top: 10px;
-    margin-left: 350px;
+    width: 100%;
+    margin: auto;
+    margin-top: 7px;
     color: white;
+    /* text-align: center; */
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px; 
@@ -120,7 +101,7 @@ span {
 
 .createaccount {
     width: 80%;
-    margin-left: 225px;
+    margin: auto;
     display: flex; 
     flex-direction: column; 
     justify-content:center; 
@@ -132,7 +113,7 @@ span {
 } 
 
 .createaccount button {
-    width: 55%;
+    width: 70%;
     padding: 15px;
     margin: auto;
     color: white;
@@ -148,8 +129,6 @@ span {
 
 .cardtwo {
     width: 35%;
-    padding: 0;
-    margin-top: 100px;
     background-image: url("./loginimages/unsplash_HAAsKeZbHAc.svg");
     border: 35px solid transparent;
     border-top-right-radius: 25px;
@@ -195,51 +174,95 @@ span {
 }
 
 
-@media screen and (max-width: 1172px) {
+
+
+
+@media screen and (max-width: 868px) {
     
     .cardone {
-        width: 65%;
-        height: auto;
-        padding: auto;
-        margin: 0 auto;
-        margin-top: 70px;
-        margin-left: 40px;
+        width: 100%;
+        border-radius: 35px;
     }
 
-    .cardone {
-        margin-top: 50px;
-        margin-left: 20px;
+    .cardtwo {
+        display: none;
     }
     
     section h1 {
-        font-size: 35px;
-        margin-left: 130px;
-        margin-top: auto;
-        margin-bottom: 5px;
+        font-size: 32px;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
+
     }
     
-    .signin {
-    width: 50%;
+    .createaccount button {
+        width: 90%;
+        padding: 10px;
+
     }
- 
+
+    .terms {
+        width: 90%;
+        font-size: 12px;
+        text-align: center;
+        margin: auto;
+        margin-top: 13px;
+    }
+
+    .input-field {
+        padding: 14px;
+    }
+
+
+    .createaccount p{
+        text-align: center;
+    }
+    .createaccount button {
+        padding: 13px;
+    }
+
+    .createaccount {
+        font-size: 10px;
+    }
+
+    #terms {
+        width: 18px;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width: 478px) {
+
+    .innercontainer {
+        width: 100%;
+    }
+
+
+    .signin {
+        margin: 0;
+        width: 90%;
+    }
+
+    section h1 {
+        font-size: 28px;
+    }
 
     ::placeholder {
         font-size: 12px;
-      }
+    }
 
-      
-.createaccount{
-    margin-left: 275px;
-}
+    .input-field {
+        padding: 12px;
+    }
 
     .createaccount button {
-        width: 100%;
-
+        width: 85%;
+        padding: 9px;
+        font-size: 10px;
     }
-.     
-    
-      
-    
 
-
-
+}

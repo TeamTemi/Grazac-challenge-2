@@ -13,6 +13,15 @@ html, body {
     --font-family: "Poppins", sans-serif;
 }
 
+/* @media (prefers-color-scheme: light) {
+    body {
+        
+        background-color: #ffff;
+        color: #151515;
+    }
+} */
+
+
 .container {
     width: 100%;
     position: relative;
@@ -55,7 +64,8 @@ html, body {
   font: 0;
 }
 
-.a_link:hover {
+.a_link::after {
+    content: '';
     color: #112D57;
     font-weight: 700; 
     transition: ease 0.3s;
@@ -72,40 +82,42 @@ html, body {
   border-radius: 20.5px;
   border: 1px solid #00B6F0;
 }
-    .login:hover {
-    color: white;
-    background: #00B6F0;
-    border: 1px solid white;
-    font-weight: bolder;
-    transition: ease-in-out 0.1s;
-    cursor: pointer;  
-    }
 
-    .lightning {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
+.login:hover {
+ color: white;
+ background: #00B6F0;
+ border: 1px solid white;
+ font-weight: bolder;
+ transition: ease-in-out 0.1s;
+ cursor: pointer;  
+}
+
+.lightning {
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+text-align: center;
+width: 100%;
 }
 
 .lightning h1 {
     color: #112D57;
-    width: 500px;
     margin: auto;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 60px;
+    width: 50%;
 }
 
 .lightning p{
     color: #5C5C5C; 
-    width: 400px;
+    width: 35%;
     margin: auto;
     margin-top: 30px;
-    font-weight: 200;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     font-family: var(--font-family);
     letter-spacing: 0.2px;
     line-height: 26px;
@@ -126,9 +138,7 @@ html, body {
   border-radius: 29.5px;
   border: 1px solid #00B6F0;
 }
-.nav-bar{
-    display: none;
-}
+
 .getstarted:hover {
     color: #000000;
     background: transparent;
@@ -294,11 +304,8 @@ html, body {
 .section3 {
     width: 59%;
     position: relative;
-    margin-top: 12%;
-}
-
-.innerdiv {
-    margin: 20px auto;  
+    margin-top: 250px;
+    margin-bottom: 350px
 }
 
 .opentype {
@@ -310,8 +317,8 @@ html, body {
 }
 
  .opentype h3 {
-    margin-top: 15%;
-    font-size: 31px;
+    width: 120%;
+    font-size: 30px; 
     font-weight: 400;    
 }
 
@@ -319,10 +326,11 @@ html, body {
     width: 220%;
     margin-top: 8%;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 22px;
     color: rgba(92, 92, 92, 1);
     line-height: 48px;
 }
+
 .opentype h4 {
     margin-top: 10px;
     color: #00B6F0;
@@ -331,21 +339,21 @@ html, body {
 }
 
 .lapiscreen {
-    width: 54%;
+    width: 70%;
     position: absolute; 
-    top: 0%;
-    left: 100%; 
+    top: -40%;
+    left: 95%; 
 }
 
 .lapiscreen>img {
     width: 100%;
     height: 100%;
-}
+} 
 
 .curvebluevector {
     position: absolute;
     width: 29%;
-    top: -20%;
+    top: -40%;
     left: 140.5%;
     right: 0;
     z-index: -1;
@@ -362,11 +370,10 @@ html, body {
 }
 
 .codescreen {
-    width: 150%;
-    height: 120%;
+    width: 60%;
     position: absolute; 
-    top: -11%;
-    right: 0%; 
+    top: -62%;
+    right: 33%; 
 }
 
 .codescreen>img {
@@ -375,11 +382,10 @@ html, body {
 }
 
 .codeyellowector {
-    width: 100%;
-    height: 150%; 
+    width: 35%; 
     position: absolute;
-    top:-20%;
-    right: 45%;
+    top:-75%;
+    right: 75%;
     z-index: -1;
 }
 
@@ -390,24 +396,26 @@ html, body {
 
 .variable {
 width: 60%;
-margin-top: 28%;
-margin-left: 62%;
+margin-top: 70px;
+margin-left: 800px;
+line-height: 38px;
 display: flex;
+justify-content: center;
 flex-direction: column;
+gap: 22px;
 font-family: var(--font-family);
 }
 
 .variable h3 {
-margin-bottom: 2%;
 font-size: 35px;
 font-weight: 500;    
 }
 
 .variable p {
-    width: 90%;
+    width: 65%;
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 22px;
     color: rgba(92, 92, 92, 1);
     font-family: var(--font-family);
 }
@@ -421,7 +429,7 @@ font-weight: 500;
     .section5 {
         width: 800px;
         margin: auto;
-        margin-top: 230px;
+        margin-top: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -430,7 +438,7 @@ font-weight: 500;
     }
 
     .section5 h2 {
-        width: 900x;
+        width: 900px;
         margin-bottom: 15px;
         font-size: 42px;
         font-weight: 500; 
@@ -445,6 +453,7 @@ font-weight: 500;
         border-width: 10px;
         border-radius: 12px; 
     }
+
     .mydiv{
         width: 70%;
         margin-top: 70px;
@@ -517,7 +526,7 @@ font-weight: 500;
             transform: scale(1);
             }
         }
-
+    
     .section6 {
         width: 100%;
         margin: auto;
@@ -880,9 +889,9 @@ font-weight: 500;
 .lowercontainer {
     margin: 0px auto; 
     margin-top: 10px;
-    width: 80%;
+    width: 78%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;
 }
 
@@ -894,15 +903,14 @@ font-weight: 500;
 }
 
 .navbox {
-    width: 70%;
+    width: 30%;
     margin: 0 auto;
 }
 
 .navbox ul {
-    width: 100%;
+    width: 120%;
     margin: 0px auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     color: black;
     list-style: none;
@@ -925,7 +933,7 @@ cursor: pointer;
 }
 
 .logos {
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
@@ -933,13 +941,17 @@ cursor: pointer;
 }
 
 
-.logos img {
-    width:  39.33px;
-    height: 39.33px;
+.logos>img {
+    width:  10%;
+    height: 5%;
+}
+
+.burger {
+    display: none; 
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
         ul {
         width: 90%; 
         } 
@@ -952,27 +964,39 @@ cursor: pointer;
         width: 25%;
     }
 
+    .section3 {
+        margin-top: 220px;
+        
+    }
+    
+    .variable {
+        margin-top: 20px;
+        margin-left: 650px;
+
+    }
+
     .curvebluevector {
-        top: -6%;
+        top: -26%;
         right: 0;
     }
 
     .lapiscreen {
-        width: 54%;
+        width: 64%;
         position: absolute; 
-        top: 7%;
-        left: 105%; 
+        top: -14%;
+        left: 95%; 
     }
 
-    .opentype h3 {
-        margin-top: 5%;   
+    .opentype h3 { 
+        font-size: 25px;
     }
 
+    .opentype { 
+        width: 40%;
+    }
     .opentype p {
-        width: 150%;
-        margin-top: 8%;
-        font-weight: 500;
-        font-size: 23px;
+        width: 180%;
+        font-size: 20px;
         color: rgba(92, 92, 92, 1);
     }
 
@@ -981,13 +1005,29 @@ cursor: pointer;
 
 }
 
+.codescreen {
+    top: -32%;
+}
+
+.codeyellowector {
+    top: -45%;
+}
+
+.section5 {
+    margin-top: 220px;
+}
+
+.ergonomic h3{
+    text-align: center;
+}
+
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 942px) {
 
     .navbar {
-        width: 30%;
+        width: 50%;
         margin-right: 20px;
     }
     .a_link {
@@ -1010,34 +1050,20 @@ cursor: pointer;
 
     .opentype {
         width: 45%;
+        margin-left: 20px;
     }
 
-    .curvebluevector {
-        top: 0%;
-    }
 
-    .codeyellowector {
-        top: -290%;
-    }
-
-    .codescreen {
-        top: 100%;
-        right: -55%;
-    }
-
-    .codescreen>img {
+    /* .codescreen>img {
         height: 60%;
-    }
+    } */
 
-    .innerdiv {
-        margin: 0;
+    .section3 {
+        margin-bottom: 250px;
     }
 
     .opentype {
-        width: 52%;
-        margin-top: 0;
-        padding: 0;
-        line-height: 0;
+        margin-left: 70px;
     }
     .opentype h3{
         line-height: 38px;
@@ -1045,15 +1071,18 @@ cursor: pointer;
         font-weight: 500;
     }
     .opentype p {
-        font-weight: 400;
+        width: 160%;
         font-size: 16px;
-        line-height: none;
+        line-height: 28px;
         margin-top: 0;
         margin-left: 0;
     }
 
     .variable {
-        margin-top: 20%;
+        width: 58%;
+        margin-top: 10px;
+        margin-left: 500px;
+        gap: 10px;
     }
 
     .variable h3 {
@@ -1061,10 +1090,9 @@ cursor: pointer;
     }
 
     .variable p {
-        width: 100%;
-        font-size: 19px; 
-        font-weight: 400; 
-        line-height: 38px;  
+        width: 90%;
+        font-size: 16px; 
+        line-height: 28px;  
         margin-bottom: 3%;
 
     }
@@ -1129,6 +1157,7 @@ cursor: pointer;
 
     .rethink p {
         width: 100%;
+        text-align: center;
     }
 
     .section6 {
@@ -1157,7 +1186,7 @@ cursor: pointer;
     .f_link {
         font-size: 14px;
     }
-
+ 
     .logos {
     width: 15%;
     margin-left: 30px;
@@ -1167,268 +1196,497 @@ cursor: pointer;
         width:  25%;
         height: 15%;  
     }
-
+    .navbox ul {
+        display: none;
+    }
     
+    .figmaland2 p {
+        margin-bottom: 10px;
+    }
 
-@media screen and (max-width: 625px) {
-
-.nav-bar {
-    display: block;
 }
 
-.lightning h1 {
-    font-size: 45px;    
-}
+@media screen and (max-width: 837px) {
+    .variable {
+        margin-left: 450px;
+    }
 
-.lightning p {
-    font-size: 14px;
-}
-.navbar {
-    display: none;
-}
-
-.justtype h3 {
-    font-size: 20px;
-}
-
-.justtype h2 {
-    font-size: 25px;
-}
-
-.justtype p {
-    font-size: 15px;
-} 
-
-.downsee {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.download {
-    padding: 10px 70px;
-}
-
-.curvebluevector {
-    width: 59% ;
-    left: 110%;
-}
-
-.lapiscreen {
-    width: 100%;
-    top: 8%;
-    left: 40%;
-}
-
-.opentype {
-    margin: auto;
-    margin-left: 80px;
-}
-
-.opentype h3 {
-margin-top: 210%;
-width: 300%;
-line-height: none;
-}
-
-.opentype p {
-    width: 195%;
-    line-height: none;
-    font-size: 16px;
-}
-
-.variable  {
-    width: 75%;
-    margin-left: 30%;
-}
+    .variable p {
+        width: 80%;
+    }
 
     .codeyellowector {
-top: 60%;
+        top: -30%;
     }
 
-.section5 h2 {
-    display: none;
+    .codescreen {
+        top: -18%;
+    }
 }
 
-.rethink p {
-    display: none;
-}
 
-.ibmimage{
-    margin-bottom: 20px;
-}
+@media screen and (max-width: 727px) {
+
     
-.freelance p {
-    width:200px;
-    font-size: 15px;
-    line-height:none; 
-}
+    /* .nav-bar {
+       position: absolute;
+       gap: 0;
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       transition: 0.3s;
+    }  */
 
-.bigibm>img {
-    width: 70%;
-    height: 70%;
-}
+    .rethink {
+        display: none;
+    }
 
-.section7 {
-padding: 20px 5px;
+    .lightning h1 {
+        font-size: 30px;    
+    }
 
-}
+    .lightning p {
+        font-size: 11px;
+    }
 
-.pricing h2{
-    font-size:35px;
-    margin-left: 55px;
-}
-
-.pricefree {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pricing p {
-    width: 300px;
-    font-size: 14px;
-}
-
-.freetrial {
-    width: 257px;
-}
-
-    .freetrial p {
-    width: 165px;
-    font-size: 13px;
-    margin-left: 80px;
-}
-
-    .dola {
+    /* body {
+        overflow-x: hidden;
+    }
     
-        margin-left:50px; 
+    .navbar {
+        opacity: 0;
+        width: 50%;
+        position: absolute;
+        right: 250px;
+        height: 100vh;
+        top: 0;
+        background-color: #F3CD03;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in; 
     }
 
-    .dola p {
-        margin-left: 10px;
-    }
-
-    .calendar button {
-        margin-left: 52px;
-        margin-bottom: 35px;
-    }
-
-    .section8{
-        width: 100%;
-    }
-
-    .ergonomic {
-        width: 80%;
+    .navbar ul {   
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    .ergonomic h3 {
-        width: 80%;
-        margin-left: 20%;
-    }
-
-    .freelancer {
-        margin-left: 100px;
-    }
-
-    .freelancer1 {
-        width: 380px;
-    }
-
-    .freelancer2 {
-        width: 380px;
-    }
-
-    .section8 button {
-        margin-left: 100px;
-    }
-
-    .lowercontainer {
-        width: 100%;
+     a {
+        width: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: space-around;
-    }
-
-    .navbox ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         align-items: center;
-        margin-left: 90px;
-    
+        justify-content: space-between;
+        
     }
 
-    .figmaland2 {
-        margin-left: 35px;
+    .burger {
+        display: block;
+        cursor: pointer;
     }
 
-    .logos {
-        margin-left: 0;
-        width: 15%;
+    .nav-active {
+        transform: translateX(0%);
     }
 
-    .f_link {
-        font-size: 18px;
+
+    @keyframes navBarFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    } */
+    .navbar {
+        display: none;
+    }
+
+
+    .justtype h3 {
+        font-size: 20px;
+    }
+
+    .justtype h2 {
+        font-size: 25px;
+    }
+
+    .justtype p {
+        font-size: 15px;
+    } 
+
+    .downsee {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .lowercontainer {
-        margin: auto;
-        margin-top: 20px;
-        width: 100%;
-        margin: 10px auto 0px;
-    
+    .download {
+        padding: 10px 70px;
     }
+
+    .curvebluevector {
+        width: 49%; 
+        top: -18%;
+        left: 120%;
+    }
+
+    .lapiscreen {
+        width: 100%;
+        top: -12%;
+        left: 42%;
+    }
+
+    .opentype {
+        width: 70%;
+    }
+
+    .opentype h3 {
+    margin-top: 300px;
+    width: 300%;
+    line-height: none;
+    }
+
+    .opentype p {
+        width: 195%;
+        line-height: none;
+        font-size: 16px;
+    }
+
+    .variable  {
+        margin-top: 40px;
+        width: 82%;
+        margin-left: 80px;
+    }
+
+    .variable h3 {
+        margin-top: 230px;
+    }
+
+
+    .codescreen {
+        width: 80%;
+        top: -40%;
+        right: 10%;
+    }
+
+    .codeyellowector {
+        width: 50%;
+        top: -50%;
+        right: 70%;
+    }
+
+    .section5 {
+        margin-top: 10px;
+    }
+
+    .section5 h2 {
+        font-size: 28px;
+    }
+
 
     .mydiv {
-        margin-top: 200px;
+        margin-top: 10px;
     }
 
-    .getstartedfree {
-        width: 50%;
-        padding: 5px 10px;
-        margin-left: 25%;
+    .ibmimage{
+        margin-bottom: 20px;
     }
-
-    .bigibm {
-        top: 95%;
-        right: -20%;
-    }
-
+        
     .freelance p {
-        width: 360px;
+        width:200px;
+        font-size: 15px;
+        line-height:none; 
     }
 
-    .testbutt {
-        width: 40%;
-        padding: 5px 10px;
+    .bigibm>img {
+        width: 70%;
+        height: 70%;
     }
 
-    .section6{
-        margin-top: 40px;
-    }
-}
+    .section7 {
+    padding: 20px 5px;
 
-@media screen and (max-width:425px) {
-    .codescreen {
-        display: none;
     }
 
-    .bigibm {
-        display: none;
+    .pricing h2{
+        font-size:35px;
+        margin-left: 55px;
     }
 
-    .codescreen {
-        right: -2%;
+    .pricefree {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
-}
+
+    .pricing p {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .freetrial {
+        width: 257px;
+    }
+
+        .freetrial p {
+        width: 165px;
+        font-size: 13px;
+        margin-left: 80px;
+    }
+
+        .dola {
+        
+            margin-left:50px; 
+        }
+
+        .dola p {
+            margin-left: 10px;
+        }
+
+        .calendar button {
+            margin-left: 52px;
+            margin-bottom: 35px;
+        }
+
+        .section8{
+            width: 100%;
+        }
+
+        .ergonomic {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ergonomic h3 {
+            width: 80%;
+        }
+
+        .freelancer1 {
+            width: 380px;
+        }
+
+        .freelancer2 {
+            width: 380px;
+        }
+
+        .section8 button {
+            margin-left: 100px;
+        }
+
+        .lowercontainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: space-around;
+        }
+
+        /* .navbox ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 90px;
+        
+        } */
+
+        .figmaland2 {
+            margin-left: 35px;
+        }
+
+        .logos {
+            margin-left: 0;
+            width: 15%;
+        }
+
+        .f_link {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+        } 
+        
+        .mydiv {
+            margin-top: 200px;
+        }
+
+        .getstartedfree {
+            width: 50%;
+            /* padding: 5px 10px; */
+            margin-left: 25%;
+        }
+
+        .bigibm {
+            top: 95%;
+            right: -20%;
+        }
+
+        .freelance p {
+            width: 360px;
+        }
+
+        .testbutt {
+            width: 40%;
+            padding: 5px 10px;
+        }
+
+        .section6{
+            margin-top: 40px;
+        }
+
+        .ergonomic {
+            margin: auto;
+        }
+      
+    }
+        
+
+    @media screen and (max-width:625px) {
+
+        .variable h3 {
+            margin-top: 180px;
+        }
+
+       
+        .bigibm,
+        .smallibm {
+            display: none;
+        }
+
+        .section5 {
+            margin-top: 60px;
+        }
+    }
+       
+
+        @media screen and (max-width:525px) {
+            .variable h3{
+                margin-top: 120px;
+                font-size: 20px; 
+            }
+
+            .opentype h3 {
+                margin-top: 175px;
+                font-size: 20px;
+            }
+
+            .variable p {
+                gap: 25px;
+                width: 98%;
+                font-size: 14px;
+
+            }
+
+            .opentype{
+              width: 60%;
+            }
     
-}
+            .opentype p{
+                font-size: 15px;
+                /* line-height: 15px; */
+            }
+            .navbox ul {
+                display: none;
+            }
+        }
+
+           
+
+    @media screen and (max-width:425px) {
+
+        .section8 button {
+            margin-left: 55px; 
+            /* width: 100px; */
+        }
+
+        .lightning h1 {
+            width: 70%;
+        }
+
+
+        .ibmimage img {
+            Width: 109.85px;
+            height: 49.94px;
+        }
+
+        .calendar button {
+            padding: 5px 15px;
+            width: 150px;
+        }
+
+        .pricing {
+            font-size: 25px;
+        }
+       
+        .freelancer {
+            margin: 0;
+            
+        }
+        .freelancer1, .freelancer2{
+
+            font-size: 13px;
+            text-align: center; 
+    
+            text-align: center;
+            width: 250px;
+
+        }
+
+        .ergonomic h3 {
+            /* font-size: px; */
+            /* margin-left: 28%; */
+
+        }
+
+        .justtype h2 {
+            font-size: 23px;
+        }
+
+        .freelance p  {
+            font-size: 15px;
+            width: 230px;
+        }
+
+        .justtype p {
+            font-size: 15px;
+        }
+
+        .gettry {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .download, .try {
+            padding: 6px 26px;
+        }
+
+        .seewalk {
+            padding: 4px 16px;
+        }
+
+        .pricing p {
+            font-size: 14px;
+            width: 280px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .testbutt {
+            width: 55%;
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+
+}       
+
+
+    
